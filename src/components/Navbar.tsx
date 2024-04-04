@@ -22,11 +22,8 @@ const Navbar = () => {
     <div className="w-full z-50 fixed flex flex-col">
       <div className="bg-[#2E3362] w-[100vw] h-auto lg:aspect-[1920/80] aspect-[360/50] flex justify-between items-center lg:px-[5.2vw] px-[7.77vw] relative">
         {/* Logo */}
-        <Link
-          href="/ManageProp"
-          className="lg:w-[9.53vw] w-[23.3vw] h-auto lg:aspect-[183/80] aspect-[84/37] relative"
-        >
-          <Image alt="Logo" src={logo} fill={true} />
+        <Link href="/ManageProp">
+          <p className="text-white font-bold text-[12px] lg:text-[25px]">TST</p>
         </Link>
 
         {/* Navigation Links */}
@@ -34,7 +31,7 @@ const Navbar = () => {
           <ul className="hidden lg:flex gap-[3vw]">
             <li className="p-4">
               <Link
-                href="/ManageProp"
+                href="/login"
                 className="text-poppins hover:opacity-70 font-semibold text-[18px] lg:text-[14px]  md:text-[14px] sm:text-[12px] text-white bg-red-600 px-4 py-2 rounded-3xl"
               >
                 Log Out

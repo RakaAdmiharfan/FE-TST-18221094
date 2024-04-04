@@ -34,8 +34,8 @@ const EditFormComponent = () => {
     <Formik initialValues={""} onSubmit={handleSubmit}>
       <Form>
         <div className="Nama Properti mb-[20px]">
-          <h5 className="text-poppins text-[11px] lg:text-[24px] mb-[8px] lg:mb-[20px] font-extrabold">
-            {"Nama Properti"}
+          <h5 className="text-poppins text-[11px] lg:text-[24px] mb-[8px] lg:mb-[20px] font-semibold">
+            Nama
           </h5>
           <div className="w-[82.22vw] lg:w-[68.75vw] h-[27px] lg:h-[50px]">
             <InputField
@@ -47,8 +47,8 @@ const EditFormComponent = () => {
         </div>
 
         <div className="Alamat mb-[20px]">
-          <h5 className="text-poppins text-[11px] lg:text-[24px] font-extrabold  mb-[8px] lg:mb-[20px]">
-            Alamat
+          <h5 className="text-poppins text-[11px] lg:text-[24px] font-semibold  mb-[8px] lg:mb-[20px]">
+            Address
           </h5>
           <div className="w-[82.22vw] lg:w-[68.75vw] h-[27px] lg:h-[50px]">
             <InputField name="Alamat" label="Alamat" placeholder="Alamat" />
@@ -57,8 +57,8 @@ const EditFormComponent = () => {
 
         <div className="ltlo flex flex-row mb-[20px]">
           <div className="Latitude mr-[04.44vw] lg:mr-[02.29vw]">
-            <h5 className="text-poppins text-[11px] lg:text-[24px] font-extrabold mb-[8px] lg:mb-[20px]">
-              Latitude
+            <h5 className="text-poppins text-[11px] lg:text-[24px] font-semibold mb-[8px] lg:mb-[20px]">
+              Location
             </h5>
             <div className="w-[38.88vw] lg:w-[33.23vw]">
               <InputField
@@ -70,8 +70,8 @@ const EditFormComponent = () => {
           </div>
 
           <div className="Longitude">
-            <h5 className="text-poppins text-[11px] lg:text-[24px] font-extrabold mb-[8px] lg:mb-[20px]">
-              Longitude
+            <h5 className="text-poppins text-[11px] lg:text-[24px] font-semibold mb-[8px] lg:mb-[20px]">
+              Status
             </h5>
             <div className="w-[38.88vw] lg:w-[33.23vw]">
               <InputField
@@ -85,8 +85,8 @@ const EditFormComponent = () => {
 
         <div className="cp flex flex-row mb-[20px]">
           <div className="Agent Name mr-[04.44vw] lg:mr-[02.29vw]">
-            <h5 className="text-poppins text-[11px] lg:text-[24px] font-extrabold mb-[8px] lg:mb-[20px]">
-              Agent Name
+            <h5 className="text-poppins text-[11px] lg:text-[24px] font-semibold mb-[8px] lg:mb-[20px]">
+              Bathroom
             </h5>
             <div className="w-[38.88vw] lg:w-[33.23vw]">
               <InputField
@@ -98,8 +98,8 @@ const EditFormComponent = () => {
           </div>
 
           <div className="No Agent">
-            <h5 className="text-poppins text-[11px] lg:text-[24px] font-extrabold mb-[8px] lg:mb-[20px]">
-              No Agent
+            <h5 className="text-poppins text-[11px] lg:text-[24px] font-semibold mb-[8px] lg:mb-[20px]">
+              Bedroom
             </h5>
             <div className="w-[38.88vw] lg:w-[33.23vw]">
               <InputField
@@ -113,7 +113,7 @@ const EditFormComponent = () => {
 
         <div className="BPMT flex flex-row mb-[20px]">
           <div className="Base Price mr-[04.44vw] lg:mr-[02.29vw]">
-            <h5 className="text-poppins text-[11px] lg:text-[24px] font-extrabold mb-[8px] lg:mb-[20px]">
+            <h5 className="text-poppins text-[11px] lg:text-[24px] font-semibold mb-[8px] lg:mb-[20px]">
               Base Price
             </h5>
             <div className="w-[24vw] lg:w-[18.95vw]">
@@ -126,7 +126,7 @@ const EditFormComponent = () => {
           </div>
 
           <div className="Multiplier mr-[04.44vw] lg:mr-[02.29vw]">
-            <h5 className="text-poppins text-[11px] lg:text-[24px] font-extrabold mb-[8px] lg:mb-[20px]">
+            <h5 className="text-poppins text-[11px] lg:text-[24px] font-semibold mb-[8px] lg:mb-[20px]">
               Multiplier
             </h5>
             <div className="w-[11.97vw]">
@@ -139,7 +139,7 @@ const EditFormComponent = () => {
           </div>
 
           <div className="Tipe">
-            <h5 className="text-poppins text-[11px] lg:text-[24px] font-extrabold mb-[8px] lg:mb-[20px]">
+            <h5 className="text-poppins text-[11px] lg:text-[24px] font-semibold mb-[8px] lg:mb-[20px]">
               Tipe
             </h5>
             <div className="w-[33.22vw]">
@@ -149,8 +149,8 @@ const EditFormComponent = () => {
         </div>
 
         <div className="Deskripsi Bisnis mb-[20px]">
-          <h5 className="text-poppins text-[11px] lg:text-[24px] font-extrabold  mb-[8px] lg:mb-[20px]">
-            Deskripsi Bisnis
+          <h5 className="text-poppins text-[11px] lg:text-[24px] font-semibold  mb-[8px] lg:mb-[20px]">
+            Deskripsi
           </h5>
           <div className="w-[82.22vw] h-[80px] lg:w-[68.75vw] lg:h-[184px]">
             <InputField
@@ -158,20 +158,6 @@ const EditFormComponent = () => {
               name="DeskripsiBisnis"
               label="Deskripsi Bisnis"
               placeholder="Deskripsi Bisnis"
-            />
-          </div>
-        </div>
-
-        <div className="Deskripsi Pribadi mb-[20px]">
-          <h5 className="text-poppins text-[11px] lg:text-[24px] font-extrabold  mb-[8px] lg:mb-[20px]">
-            Deskripsi Pribadi
-          </h5>
-          <div className="w-[82.22vw] h-[80px] lg:w-[68.75vw] lg:h-[184px]">
-            <InputField
-              as="textarea"
-              name="DeskripsiPribadi"
-              label="Deskripsi Pribadi"
-              placeholder="Deskripsi Pribadi"
             />
           </div>
         </div>

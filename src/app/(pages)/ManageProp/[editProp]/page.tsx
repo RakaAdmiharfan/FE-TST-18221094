@@ -17,8 +17,8 @@ export default function PropertyPage() {
   return (
     <div className="bg-[#EFF2FA] relative overflow-hidden w-full h-content flex-col flex items-center justify-center">
       <div className="title">
-        <h2 className="text-poppins mb-[24px] lg:mb-[32px] mt-[70px] lg:mt-[140px] text-[28px] lg:text-[60px] text-[#000] text-center">
-          Manage Properties
+        <h2 className="text-poppins mb-[24px] lg:mb-[32px] mt-[70px] text-[28px] lg:text-[60px] text-[#000] text-center font-bold">
+          CRUD
         </h2>
       </div>
       <div className="Box">

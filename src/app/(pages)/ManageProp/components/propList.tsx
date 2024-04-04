@@ -18,7 +18,10 @@ function PropList({ data, header }: { data: any[]; header: any[] }) {
           <tr>
             {header.map((item, idx) => {
               return (
-                <th key={idx} className="w-auto h-auto font-poppins text-black text-left pb-[8px] text-[10px] lg:text-[20px]">
+                <th
+                  key={idx}
+                  className="w-auto h-auto font-poppins text-black text-left pb-[8px] text-[10px] lg:text-[20px]"
+                >
                   {item}
                 </th>
               );
@@ -34,18 +37,21 @@ function PropList({ data, header }: { data: any[]; header: any[] }) {
                 className="border-b-[1px] border-black border-opacity-30"
               >
                 <td className="overflow-hidden w-auto h-auto py-[18.5px] text-[10px] lg:text-[20px]">
-                  <div>{item.id_properti}</div>
+                  <div>1</div>
                 </td>
                 <td className="overflow-hidden w-auto h-auto py-[18.5px] text-[10px] lg:text-[20px]">
-                  <div>{item.nama_properti}</div>
+                  <div>10000</div>
                 </td>
                 <td className="overflow-hidden w-auto h-auto py-[18.5px] text-[10px] lg:text-[20px]">
-                  <div>{item.alamat}</div>
+                  <div>1.2</div>
+                </td>
+                <td className="overflow-hidden w-auto h-auto py-[18.5px] text-[10px] lg:text-[20px]">
+                  <div>10 KWH</div>
                 </td>
                 <td className="w-auto h-auto py-[18.5px]">
                   <Link
                     onClick={() => handleClick(item)}
-                    href={`/editProp?id=${item.id_properti}`}
+                    href={`/ManageProp/${item.id_properti}`}
                     className="hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] flex rounded-[7.145px] w-[12.77vw] px-[14.29px] py-[4.76px] lg:w-[04.94vw] lg:px-[1px] lg:py-[5px] lg:rounded-[15px] justify-center border-[#6C88CD] border-[3px]"
                   >
                     <h6 className="text-[#6C88CD] text-poppins text-[8.574px] lg:text-[18px]">

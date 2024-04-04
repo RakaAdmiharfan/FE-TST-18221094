@@ -14,7 +14,7 @@ export default function SignUp() {
     AOS.init({ duration: 1000 });
   });
   return (
-    <div className="bg-white relative pt-[0px] xl:pt-[57px] lg:pt-[54px] w-[100vw] min-h-[100vh] overflow-hidden">
+    <div className="bg-white relative w-[100vw] min-h-[100vh] overflow-hidden">
       <div className="flex flex-col-reverse lg:flex-row w-full h-auto aspect-auto lg:aspect-[1920/1000]">
         <div className="w-[100vw] lg:w-[50vw] h-full pb-[25px] sm:pb-[30px] md:pb-[35px] lg:pb-[0px] relative flex items-center justify-center">
           <div
@@ -28,27 +28,11 @@ export default function SignUp() {
               Sign up for an account by filling the required information
             </text>
             <RegisterForm />
-            <div className="w-full mt-[20px] sm:mt-[25px] md:mt-[30px] xl:mt-[35px] lg:mt-[25px] flex justify-between items-center">
-              <div className="w-[33.6vw] lg:w-[14.58vw] h-[1px] bg-[#808080]"></div>
-              <text className="font-medium text-[12px] sm:text-[16px] md:text-[20px] xl:text-[16px] lg:text-[14px]">
-                or
-              </text>
-              <div className="w-[33.6vw] lg:w-[14.58vw] h-[1px] bg-[#808080]"></div>
-            </div>
-            <div className="w-full mt-[20px] sm:mt-[25px] md:mt-[30px] xl:mt-[35px] lg:mt-[25px] flex justify-center">
-              <button className="w-[42.2vw] lg:w-[14.375vw] hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] h-auto aspect-[152/26] lg:aspect-[276/47] border-[3px] text-[#2E3362] border-[#2E3362] rounded-[8px] lg:rounded-[15px] flex justify-center items-center">
-                <div className="w-[3.6vw] lg:w-[1.25vw] h-auto aspect-square relative mr-[2.5vw] lg:mr-[0.83vw]">
-                  <Image alt="Google" src={google} fill={true} />
-                </div>
-                <text className="text-[#2E3362] font-bold text-[12px] sm:text-[15px] md:text-[18px] xl:text-[12px] lg:text-[10px] text-poppins">
-                  Sign Up with Google
-                </text>
-              </button>
-            </div>
           </div>
         </div>
-        <div className="hidden lg:flex w-[50vw] h-[100vh] aspect-[360/300] absolute bg-black z-10 opacity-60 right-0"></div>
-        <div className="w-[100vw] lg:w-[50vw] h-auto lg:h-[100vh] aspect-[360/300] lg:aspect-auto relative lg:absolute lg:right-0">
+
+        <div className="hidden lg:flex w-[50vw] h-full aspect-[360/300] absolute bg-black z-10 opacity-60 right-0"></div>
+        <div className="w-[100vw] lg:w-[50vw] h-full lg:h-[full] aspect-[360/300] lg:aspect-auto relative lg:absolute lg:right-0">
           <Image alt="House" src={house} fill={true} objectFit="cover" />
         </div>
 
